@@ -1,0 +1,57 @@
+{
+  "xsappname": "pets-router",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.Add",
+      "description": "add"
+    },
+    {
+      "name": "$XSAPPNAME.Display",
+      "description": "display"
+    },
+    {
+      "name": "$XSAPPNAME.Delete",
+      "description": "delete"
+    },
+    {
+      "name": "$XSAPPNAME.Edit",
+      "description": "edit"
+    }
+  ],
+  "role-templates": [
+    {
+      "name": "Viewer",
+      "description": "Can only view info",
+      "scope-references": [
+        "$XSAPPNAME.Display"
+      ]
+    },
+    {
+      "name": "Administrator",
+      "description": "Can view, add, edit and delete info",
+      "scope-references": [
+        "$XSAPPNAME.Add",
+        "$XSAPPNAME.Display",
+        "$XSAPPNAME.Edit",
+        "$XSAPPNAME.Delete"
+      ]
+    }
+  ],
+  "role-collections": [
+    {
+      "name": "Viewer",
+      "description": "Can only view info",
+      "role-template-references": [
+        "$XSAPPNAME.Viewer"
+      ]
+    },
+    {
+      "name": "Administrator",
+      "description": "Can view, add, edit and delete info",
+      "role-template-references": [
+        "$XSAPPNAME.Administrator"
+      ]
+    }
+  ]
+}
