@@ -1,0 +1,13 @@
+{
+  "welcomeFile": "/userInfo",
+  "routes": [{
+    "authenticationType": "xsuaa",
+    "source": "/people(.*)$",
+    "destination": "pets-xsuaa-destination"
+  },
+    {
+      "authenticationType": "xsuaa",
+      "source": "/pets(.*)$",
+      "destination": "pets-xsuaa-destination"
+    }]
+}
