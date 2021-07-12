@@ -1,6 +1,6 @@
-# equalpay-approuter
+# pets-router
 
-Router app for the EqualPay application
+Router app for the Pets-service application
 
 ## Deployment
 
