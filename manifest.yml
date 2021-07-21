@@ -8,6 +8,6 @@ applications:
       - nodejs_buildpath
     env:
       BP_NODE_VERSION: '12.12.0'
-      destinations: '[{ "name":"pets-xsuaa-destination","url": "https://pets-service.cfapps.eu10.hana.ondemand.com/","forwardAuthToken":true}]'
+      destinations: '[{ "name":"pets-xsuaa-destination","url": "https://pets-service-proxy.cfapps.eu10.hana.ondemand.com/","forwardAuthToken":true}]'
     services:
         - pets-xsuaa
