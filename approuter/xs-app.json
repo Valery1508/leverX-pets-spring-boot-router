@@ -2,8 +2,7 @@
   "welcomeFile": "/userInfo",
   "routes": [{
     "authenticationType": "xsuaa",
-    "source": "pets-service/(.*)",
-    "target": "$1",
+    "source": "/(.*)",
     "destination": "pets-xsuaa-destination"
   }]
 }
